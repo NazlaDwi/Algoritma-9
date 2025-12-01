@@ -1,0 +1,19 @@
+public class TotalAfterDiscount {
+    public static void main(String[] args) {
+        double TotalPayment = 60000;
+        double money = 100000;
+        double discount = 0;
+
+        if (TotalPayment > 200000) {
+            discount = 20;
+        } else if (TotalPayment > 50000) {
+            discount = 10;
+        }
+        double discountAmount = TotalPayment * discount / 100;
+        double TotalAfterDiscount = TotalPayment-discountAmount;
+        double exchange = money-TotalAfterDiscount;
+
+        System.out.print(exchange);
+        
+        }
+    }
